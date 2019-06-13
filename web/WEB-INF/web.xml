@@ -5,13 +5,13 @@
                              http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
     <servlet>
-        <servlet-name>EmailListServlet</servlet-name>
-        <servlet-class>murach.email.EmailListServlet</servlet-class>
+        <servlet-name>SurveyServlet</servlet-name>
+        <servlet-class>murach.controllers.SurveyServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>EmailListServlet</servlet-name>
-        <url-pattern>/emailList</url-pattern>
+        <servlet-name>SurveyServlet</servlet-name>
+        <url-pattern>/survey</url-pattern>
     </servlet-mapping>
 
     <session-config>
@@ -19,7 +19,7 @@
     </session-config>
     
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
         <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 </web-app>
